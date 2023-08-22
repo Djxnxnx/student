@@ -3,7 +3,7 @@ layout: default
 title: Student Blog
 ---
 
-## Tarun Tata's page
+## Tarun's page
 
 Go to my [Github account](https://github.com/Djxnxnx) !!
 
