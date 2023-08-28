@@ -40,7 +40,7 @@ Go to my [Github account](https://github.com/Djxnxnx){:target="_blank"}
 
 ## Hacks
 
-Make sure to run bundle install where the Gemfile is located. Download nbconvert and PyYaml to run your make command. Copy the link after running make. The file to change the blog page is index.md. You can use the notebooks to create other blogs which you can use. Use ls to list all the files in a directory. Use cd to change directories. Use pip3 install to download things. Use mkdir to create a directory.
+Make sure to run bundle install where the Gemfile is located. Download nbconvert and PyYaml to run your make command. Copy the link after running make. The file to change the blog page is index.md. You can use the notebooks to create other blogs which you can use. Use ls to list all the files in a directory. Use cd to change directories. Use pip3 install to download things. Use mkdir to create a directory. To check the version of something, put in the name and then --version.
 
 ## Calculator
 
