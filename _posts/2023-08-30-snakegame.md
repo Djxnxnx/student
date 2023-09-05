@@ -4,31 +4,14 @@ comments: false
 layout: post
 title: Snake Game
 description: Working snake game
-type: hacks
+type: tangibles
 courses: { compsci: { week: 2}}
 categories: [C1.4]
 ---
 
 
 
-&nbsp;         
-&nbsp;         
-&nbsp;         
-&nbsp;         
-&nbsp; 
-&nbsp;         
-&nbsp;
-&nbsp;       
-&nbsp;     
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;         
 
-
-        
  
 
 
@@ -100,9 +83,11 @@ categories: [C1.4]
 <div class="container">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
         <p class="fs-4">Snake score: <span id="score_value">0</span></p>
+        &nbsp;      
     </header>
     <div class="container bg-secondary" style="text-align:center;">
         <!-- Main Menu -->
+        &nbsp;                     
         <div id="menu" class="py-4 text-light">
             <p>Welcome to Snake, press <span style="background-color: #FFFFFF; color: #000000">space</span> to begin</p>
             <a id="new_game" class="link-alert">new game</a>
