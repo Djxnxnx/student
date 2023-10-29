@@ -37,3 +37,8 @@ My name is Tarun and I am a sophmore at Del Norte High School. Things I like to 
 
 
 Go to my [Github account](https://github.com/Djxnxnx){:target="_blank"}
+
+
+from IPython.display import display, HTML
+html_code = “”"
+
