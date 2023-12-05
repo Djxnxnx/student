@@ -9,3 +9,8 @@ Unit2:
   description: Learn (JavaScript|Python|Java).  Start Agile development process.
   start: 4
   end: 12
+Unit3:
+  title: Trimester 2
+  description: CPT and others
+  start: 13
+  end: 24
