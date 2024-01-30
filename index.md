@@ -1,44 +1,106 @@
 ---
 layout: default
-title: Student Blog
+title: Tarun Tata Blog
 ---
-
-
-
-
-## Tarun's Page
-
-
-## About Me
-
-My name is Tarun and I am a sophmore at Del Norte High School. Things I like to do include coding, playing tennis, playing video games, and hanging out with friends. The classes I am taking this trimester include: AP Computer Science, AP Chemistry, World History 1, AP Calculus AB, and Spanish 3.
-
-<img src="images/IMG_0886.PNG"  width="250" height="500">
-
-
-
-## Picture of me (and my dog)
-
-<img src="images/IMG_4992-preview.jpg"  width="350" height="500">
-
-## My Class Schedule
-
-| Period      | Class |
-| ----------- | ----------- |
-|1    | AP Computer Science       |
-|2    | AP Chemistry        |
-|3    | World History 1        |
-|4    | AP Calculus AB        |
-|5    | Spanish 3        |
-
-
-
-## Go to My Page:
-
-
-Go to my [Github account](https://github.com/Djxnxnx){:target="_blank"}
-
-
-from IPython.display import display, HTML
-html_code = “”"
-
+<style>
+ #login {
+    margin-top: 10px;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    width:100%;
+}
+.login-container {
+  border: 3px solid #F1F1F1;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button {
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  margin-left: 200px;
+}
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+.container {
+  padding: 16px;
+}
+span.psw {
+  display: flex;
+  justify-items: center;
+  text-align: center;
+  margin-left: 325px;
+  padding-top: 16px;
+}
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+</style>
+<div class="login-container">
+  <div class="imgcontainer">
+    <img src="{{site.baseurl}}/images/logo.webp" alt="Avatar" class="avatar">
+  </div>
+<form action="javascript:login_user()">
+    <label for="uid"><b>Username</b></label>
+    <input type="text" id="uid" placeholder="Enter Username" name="uid" required>
+    <label for="password"><b>Password</b></label>
+    <input type="password" id="password" placeholder="Enter Password" name="password" required>
+    <button class='button'>Log in</button>
+    <div>
+    <span class="psw">Need an account? <a href="{{site.baseurl}}/signup"> Sign Up</a></span>
+    </div>
+</form>
+<script type="module">
+    import { uri, options } from '{{site.baseurl}}/assets/js/api/config.js';
+    function login_user(){
+      var myHeaders = new Headers();
+myHeaders.append("Content-Type", "application/json");
+        const url = uri + '/api/users/authenticate';
+        const body = {
+            uid: document.getElementById("uid").value,
+            password: document.getElementById("password").value,
+        };
+        const authOptions = {
+            method: 'POST',
+            cache: 'no-cache',
+            headers: myHeaders,
+            body: JSON.stringify(body)
+        };
+        fetch(url, authOptions)
+        .then(response => {
+            if (!response.ok) {
+                const errorMsg = 'Login error: ' + response.status;
+                console.log(errorMsg);
+                return;
+            }
+            window.location.href = "{{site.baseurl}}/main";
+        })
+        .catch(err => {
+            console.error(err);
+        });
+    }
+    window.login_user = login_user;
+</script>
