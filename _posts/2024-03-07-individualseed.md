@@ -1,3 +1,13 @@
+---
+title: Individual Seed
+toc: true
+comments: true
+description: My individual seed
+courses: { compsci: {week: 26} }
+categories: [C3.0, C3.1, C4.1]
+type: tangibles
+---
+
 ## Backend:
 
 [Key Commit](https://github.com/Imaad08/cpt-backend/commit/39e68090b0d546a130eb79331572a4297d6e7dce)
