@@ -1,6 +1,6 @@
 ---
 title: Individual Seed
-toc: true
+toc: false
 comments: true
 description: My individual seed
 courses: { compsci: {week: 26} }
