@@ -7,7 +7,6 @@ type: tangibles
 courses: { compsci: { week: 26 } }
 ---
 
-
 <style>
     body {
     color: #ffffff; 
@@ -116,7 +115,8 @@ courses: { compsci: { week: 26 } }
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                    'Accept': 'application/json'
+                    'Accept': 'application/json',
+                    'Access-Control-Allow-Origin': '*'
                 },
                 body: JSON.stringify(Object.fromEntries(formData))
             })
