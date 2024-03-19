@@ -102,6 +102,8 @@ courses: { compsci: { week: 26 } }
             <option value="Q">Queenstown</option>
             <option value="S">Southampton</option>
         </select><br><br>
+        <label for="alone">Alone:</label>
+        <input type="checkbox" id="alone" name="alone"><br><br>
         <button type="button" onclick="predictSurvival()">Predict Survival</button>
     </form>
     <div id="result"></div>
